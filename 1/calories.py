@@ -1,6 +1,7 @@
 file = open("input.txt", "r")
 lines = file.readlines()
 
+
 calories = 0
 ElfNum = 1
 MostCalories = 0
