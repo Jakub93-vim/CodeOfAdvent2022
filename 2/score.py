@@ -7,18 +7,20 @@ lines = file.readlines()
 #score play 0, 3, 6
 
 
+#second round X means you need to lose, Y means you need to end the round in a draw, and Z means you need to win
+
 score = 0
 
 for line in lines:
 
-	if line[0] == "A" and line[2] == "X":
+	if line[0] == "A" and line[2] == "X": # 0+3
+		score += 3
+
+	elif line[0] == "A" and line[2] == "Y": # 3+1
+		
 		score += 4
 
-	elif line[0] == "A" and line[2] == "Y":
-		
-		score += 8
-
-	elif line[0] == "A" and line[2] == "Z":
+	elif line[0] == "A" and line[2] == "Z": #
 		
 		score += 3
 
