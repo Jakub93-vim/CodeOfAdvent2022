@@ -20,33 +20,33 @@ for line in lines:
 		
 		score += 4
 
-	elif line[0] == "A" and line[2] == "Z": #
+	elif line[0] == "A" and line[2] == "Z": # 6+2
 		
-		score += 3
+		score += 8
 
-	elif line[0] == "B" and line[2] == "X":
+	elif line[0] == "B" and line[2] == "X": # 0+1
 
 		score += 1
 
-	elif line[0] == "B" and line[2] == "Y":
+	elif line[0] == "B" and line[2] == "Y": # 2+3
 		
 		score += 5
 
-	elif line[0] == "B" and line[2] == "Z":
+	elif line[0] == "B" and line[2] == "Z": # 6+3
 		
 		score += 9
 
-	elif line[0] == "C" and line[2] == "X":
+	elif line[0] == "C" and line[2] == "X": # 0+2
 
-		score += 7
-
-	elif line[0] == "C" and line[2] == "Y":
-		
 		score += 2
 
-	elif line[0] == "C" and line[2] == "Z":
+	elif line[0] == "C" and line[2] == "Y": # 3+3
 		
 		score += 6
+
+	elif line[0] == "C" and line[2] == "Z": #6+1
+		
+		score += 7
 
 	print ('Score on the way', score)
 
