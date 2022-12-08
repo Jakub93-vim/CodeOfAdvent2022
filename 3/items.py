@@ -1,5 +1,19 @@
+from string import ascii_uppercase
+from string import ascii_lowercase
+
 file = open("input.txt",'r')
 lines = file.readlines()
+
+BigLetters = {}
+smallLetters = {}
+
+for L, N in zip(ascii_uppercase, range(27,53)):
+
+	BigLetters.update({L:N})
+
+for l, N in zip(ascii_lowercase, range(1,28)):
+
+	smallLetters.update({l:N})
 
 for line in lines:
 
@@ -13,3 +27,6 @@ for line in lines:
 				print ('The same letter here', x)
 
 	print ( line, First_Part, Second_Part)
+
+print (BigLetters)
+print (smallLetters)
