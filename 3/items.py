@@ -7,8 +7,9 @@ for line in lines:
 	Second_Part = line[len(line)//2:]
 
 	for x in First_Part:
-		print (x, y)
-		if x == y:
-			print ('The same letter')
+		for y in Second_Part:
+
+			if x == y:
+				print ('The same letter here', x)
 
 	print ( line, First_Part, Second_Part)
